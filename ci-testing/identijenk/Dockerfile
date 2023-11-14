@@ -14,7 +14,6 @@ RUN echo "deb http://archive.debian.org/debian/ stretch main contrib non-free" >
       apt-get update && apt-get install -y docker-ce-cli && \
       rm -rf /var/lib/apt/lists/*
 
-# RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 RUN curl -L https://github.com/docker/compose/releases/download/1.4.1/ \
 docker-compose-$(uname -s)-$(uname -m)> /usr/local/bin/docker-compose; \

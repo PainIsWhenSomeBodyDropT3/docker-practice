@@ -7,7 +7,7 @@ sudo docker-compose $COMPOSE_ARGS rm --force -v
 
 #build the system
 sudo docker-compose $COMPOSE_ARGS build --no-cache
-# sudo docker-compose $COMPOSE_ARGS up -d
+sudo docker-compose $COMPOSE_ARGS up -d
 
 #Run unit tests
 sudo docker-compose $COMPOSE_ARGS run --no-deps --rm -e ENV=UNIT identidock
